@@ -1,0 +1,16 @@
+com\lft\client\MlClient$MlPrediction.class
+com\lft\client\MlClient.class
+com\lft\model\Candle.class
+com\lft\service\StrategyService.class
+com\lft\model\TradeSignal.class
+com\lft\model\Action.class
+com\lft\model\Candle$CandleBuilder.class
+com\lft\service\MarketDataService.class
+com\lft\controller\TradeController.class
+com\lft\repository\TradeHistoryRepository.class
+com\lft\config\AppConfig.class
+com\lft\LftApplication.class
+com\lft\model\TradeSignal$TradeSignalBuilder.class
+com\lft\service\ExecutionService.class
+com\lft\service\FeatureService.class
+com\lft\exception\GlobalExceptionHandler.class
