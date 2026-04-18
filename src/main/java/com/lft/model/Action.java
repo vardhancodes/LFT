@@ -1,5 +1,7 @@
 package com.lft.model;
 
-public class Action {
-    
+public enum Action {
+    BUY, 
+    SELL, 
+    HOLD
 }

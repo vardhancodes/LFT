@@ -1,4 +1,4 @@
-package com.lft.servcie;
+package com.lft.service;
 
 public class StrategyService {
     
