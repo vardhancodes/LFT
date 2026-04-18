@@ -1,4 +1,4 @@
-package main.java.com.lft.exception;
+package com.lft.exception;
 
 public class GlobalExceptionHandler {
     

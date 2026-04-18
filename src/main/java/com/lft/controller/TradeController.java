@@ -1,4 +1,4 @@
-package main.java.com.lft.controller;
+package com.lft.controller;
 
 public class TradeController {
     

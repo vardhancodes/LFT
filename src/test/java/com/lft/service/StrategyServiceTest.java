@@ -1,4 +1,4 @@
-package test.java.com.lft.service;
+package com.lft.service;
 
 public class StrategyServiceTest {
     

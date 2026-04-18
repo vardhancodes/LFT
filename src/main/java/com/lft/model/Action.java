@@ -1,4 +1,4 @@
-package main.java.com.lft.model;
+package com.lft.model;
 
 public class Action {
     

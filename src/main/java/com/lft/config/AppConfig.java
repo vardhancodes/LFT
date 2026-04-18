@@ -1,4 +1,4 @@
-package main.java.com.lft.config;
+package com.lft.config;
 
 public class AppConfig {
     

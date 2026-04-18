@@ -1,4 +1,4 @@
-package main.java.com.lft.repository;
+package com.lft.repository;
 
 public class TradeHistoryRepository {
     

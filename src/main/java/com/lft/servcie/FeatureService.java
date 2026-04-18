@@ -1,4 +1,4 @@
-package main.java.com.lft.servcie;
+package com.lft.servcie;
 
 public class FeatureService {
     

@@ -1,4 +1,4 @@
-package main.java.com.lft.client;
+package com.lft.client;
 
 public class MlClient {
     
