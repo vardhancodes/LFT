@@ -7,10 +7,13 @@ com\lft\model\Action.class
 com\lft\model\Candle$CandleBuilder.class
 com\lft\service\MarketDataService.class
 com\lft\controller\TradeController.class
+com\lft\model\TradeEntity.class
 com\lft\repository\TradeHistoryRepository.class
 com\lft\config\AppConfig.class
 com\lft\LftApplication.class
+com\lft\model\TradeEntity$TradeEntityBuilder.class
 com\lft\model\TradeSignal$TradeSignalBuilder.class
 com\lft\service\ExecutionService.class
 com\lft\service\FeatureService.class
+com\lft\repository\TradeRepository.class
 com\lft\exception\GlobalExceptionHandler.class

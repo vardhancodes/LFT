@@ -1,36 +1,44 @@
 package com.lft.service;
 
 import com.lft.model.Action;
+import com.lft.model.TradeEntity;
 import com.lft.model.TradeSignal;
+import com.lft.repository.TradeRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class ExecutionService {
 
-    /**
-     * Routes the final signal to the broker for execution.
-     */
+    // Inject our new database repository
+    private final TradeRepository tradeRepository;
+
     public void executeTrade(TradeSignal signal) {
-        
-        // If the strategy decided to HOLD, we do absolutely nothing.
         if (signal.getAction() == Action.HOLD) {
             log.info("[{}] HOLD signal received. Reason: {}", signal.getSymbol(), signal.getReason());
             return;
         }
 
-        // In a real system, you would initialize your Broker API Client here 
-        // (e.g., calling Zerodha Kite Connect or Upstox API).
-        
-        log.info("=================================================");
         log.info("🚀 EXECUTING TRADE: {} {}", signal.getAction(), signal.getSymbol());
-        log.info("🎯 Target Price: ${}", String.format("%.2f", signal.getTargetPrice()));
-        log.info("🛡️ Stop Loss: ${}", String.format("%.2f", signal.getStopLoss()));
-        log.info("🧠 ML Confidence: {}%", String.format("%.2f", signal.getConfidence() * 100));
-        log.info("📝 Audit Reason: {}", signal.getReason());
-        log.info("=================================================");
         
-        // TODO: Http call to broker: brokerClient.placeOrder(signal);
+        // Convert the TradeSignal into a TradeEntity for the database
+        TradeEntity tradeRecord = TradeEntity.builder()
+                .symbol(signal.getSymbol())
+                .action(signal.getAction())
+                .targetPrice(signal.getTargetPrice())
+                .stopLoss(signal.getStopLoss())
+                .mlConfidence(signal.getConfidence())
+                .reason(signal.getReason())
+                .executionTime(LocalDateTime.now())
+                .build();
+
+        // Save it to PostgreSQL!
+        tradeRepository.save(tradeRecord);
+        log.info("💾 Trade successfully saved to database with ID: {}", tradeRecord.getId());
     }
 }

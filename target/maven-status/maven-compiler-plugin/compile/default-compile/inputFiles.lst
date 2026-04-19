@@ -1,9 +1,11 @@
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\config\AppConfig.java
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\exception\GlobalExceptionHandler.java
+C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\repository\TradeRepository.java
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\service\MarketDataService.java
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\service\FeatureService.java
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\model\Action.java
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\controller\TradeController.java
+C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\model\TradeEntity.java
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\model\TradeSignal.java
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\service\ExecutionService.java
 C:\Users\Viraj Vardhan\Desktop\LFT-Backend\src\main\java\com\lft\LftApplication.java
