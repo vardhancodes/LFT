@@ -45,4 +45,4 @@ def predict_signal(features: TradingFeatures):
     }
     
     print(f"ML Decision: {result}")
-    return resultu
+    return result

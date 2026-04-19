@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lft_db
+    username: quant
+    password: quantpass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Automatically creates our database tables!
+    show-sql: true     # Prints the SQL queries in the terminal so we can see them
+    properties:
+      hibernate:
+        format_sql: true
+
+# The URL for our Python ML API
+ml:
+  api:
+    url: http://localhost:8000/predict
